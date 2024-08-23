@@ -13,7 +13,7 @@ find_package(Qt6 COMPONENTS
         Core
         REQUIRED)
 
-add_executable(atb_utility main.cpp)
+add_executable(atb_utility src/main.cpp)
 target_link_libraries(atb_utility
         Qt::Core
 )
