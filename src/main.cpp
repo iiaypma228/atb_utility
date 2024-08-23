@@ -1,8 +1,9 @@
-#include <QCoreApplication>
-#include <QDebug>
+#include <iostream>
+#include "ArgumentParser/ArgumentParser.h"
 
 int main(int argc, char *argv[]) {
-    QCoreApplication a(argc, argv);
-    qDebug() << "Hello World";
-    return QCoreApplication::exec();
+    ArgumentParser parser(argc, argv);
+    std::cout << parser.getAllAsString() << std::endl;
+
+    return 0;
 }
